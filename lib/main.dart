@@ -12,11 +12,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const iconTheme = IconThemeData(color: Colors.blue);
     return MaterialApp(
-      home: const HomePageView(),
+      home: HomePageView(),
       theme: ThemeData(
+        primaryIconTheme: iconTheme,
         backgroundColor: const Color(0xFFFFFFFF),
         appBarTheme: const AppBarTheme(
+          iconTheme: iconTheme,
+          actionsIconTheme: iconTheme,
           backgroundColor: Color(0xFFFFFFFF),
         ),
         scaffoldBackgroundColor: const Color(0xFFFFFFFF),
